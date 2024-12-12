@@ -1,12 +1,65 @@
+@font-face {
+    font-family:  nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: nb;
 
 }
 
 html, body{
     height: 100%;
     width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #6d6969;
+    position: relative;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw ;
+}
+
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+nav h4{
+    font-size: 1.3vw;
+    font-weight: 120;
+}
+
+#page1-content h1{
+    font-size: 20vw;
 }
