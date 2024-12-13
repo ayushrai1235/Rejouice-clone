@@ -19,6 +19,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #page1{
@@ -71,7 +72,8 @@ nav{
     width: 100%; 
     align-items: center;
     justify-content: space-between;
-    padding: 3vw 3vw ;
+    padding: 2.5vw 3vw ;
+    overflow: hidden;
 }
 
 nav h3{
@@ -92,57 +94,51 @@ nav h4{
     font-family: rejoy;
     font-size: 25vw;
     margin: 0;
-    margin-bottom: 5vh;
-    overflow: hidden;
+    margin-bottom: 5.4vh;
+    
 }
 
 #page1-content h1 span {
     display: inline-block; 
-    opacity: 0; 
+    font-family: rejoy;
+    
     transform: translateY(50px); 
-    animation: fadeUp 0.8s ease-in-out forwards;
+   
 }
 
-#page1-content h1 span:nth-child(1) {
-    animation-delay: 0s;
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+#page2-top{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
 }
 
-#page1-content h1 span:nth-child(2) {
-    animation-delay: 0.2s;
+#page2-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
 }
 
-#page1-content h1 span:nth-child(3) {
-    animation-delay: 0.4s;
+#page2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
 }
 
-#page1-content h1 span:nth-child(4) {
-    animation-delay: 0.6s;
+.elem{
+    overflow: hidden;
+    
 }
-
-#page1-content h1 span:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-#page1-content h1 span:nth-child(6) {
-    animation-delay: 1s;
-}
-
-#page1-content h1 span:nth-child(7) {
-    animation-delay: 1.2s;
-}
-
-#page1-content h1 span:nth-child(8) {
-    animation-delay: 1.4s;
-}
-
-
-@keyframes fadeUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.elem h1{
+    
+    font-size: 4.2vw;
+    font-weight: 500;
 }
