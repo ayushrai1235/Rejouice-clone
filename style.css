@@ -86,14 +86,63 @@ nav h4{
 
 #page1-content h1{
    
-    font-size: 28vw;
+    display: flex; /* Ensures spans align horizontally */
+    justify-content: center; /* Center aligns horizontally */
+    align-items: center;
     font-family: rejoy;
-   
+    font-size: 25vw;
+    margin: 0;
+    margin-bottom: 5vh;
+    overflow: hidden;
 }
 
-#page1-content h1 span{
-    font-family: rejoy;
-    /* font-size: 28vw; */
-    
+#page1-content h1 span {
+    display: inline-block; 
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeUp 0.8s ease-in-out forwards;
+}
 
+#page1-content h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#page1-content h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#page1-content h1 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#page1-content h1 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#page1-content h1 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+#page1-content h1 span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+#page1-content h1 span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+#page1-content h1 span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
