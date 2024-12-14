@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: nb;
+    
 
 }
 
@@ -20,6 +21,7 @@ html, body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-color: #faf8f3;
 }
 
 #page1{
@@ -111,6 +113,7 @@ nav h4{
     width: 100%;
     position: relative;
     padding: 5vw 2.8vw;
+    
 }
 #page2-top{
 
@@ -141,4 +144,67 @@ nav h4{
     
     font-size: 4.2vw;
     font-weight: 500;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+#page3-top{
+    text-align: center;
+}
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#page3-top h4 span{
+    font-size: 0.65vw;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-top: 2;
+    padding-bottom: 2;
+    border-radius: 20px;
+}
+#page3-top h2{
+    font-size: 4vw;
+    font-weight: 500;
+}
+#page3-elements{
+    height: 80vh;
+    width:100%;
+    
+    display: flex;
+    align-items: center;
+    margin-top: 8vw ;
+    justify-content: space-between;
+
+}
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    position: relative;
+}
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.5s;
+}
+
+#page3-elements .box:hover img{
+    opacity: 0;
 }
