@@ -175,7 +175,18 @@ nav h4{
 #page3-top h2{
     font-size: 4vw;
     font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline 3px;
+    
 }
+
+#page3-top h2:hover{
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+
+
 #page3 .letter {
     display: flex;
     padding: 1.7vw 0;
