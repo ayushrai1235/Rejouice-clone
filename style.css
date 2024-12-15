@@ -224,3 +224,21 @@ nav h4{
 #page3-elements .box:hover img{
     opacity: 0;
 }
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 2.8vw;
+    margin-bottom: 25vh;
+}
+
+#page4-top{
+    padding-bottom: 1.7vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+#page4-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    
+}

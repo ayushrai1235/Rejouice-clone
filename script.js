@@ -60,7 +60,7 @@ page1Content.addEventListener("mouseleave",function(){
 cursoreffect()
 
 function page2Animation(){
-    gsap.from(".elem h1" , {
+    gsap.from("#page2 .elem h1" , {
         y:120,
         stagger: 0.2,
         duration: 1,
@@ -73,6 +73,21 @@ function page2Animation(){
             scrub: 2
         }
     })
+
+    gsap.from("#page4 .elem h1 ", {
+        y: 120,
+        stagger: 0.3,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#page4",
+            scroller: "#main",
+            start: "top 40%",
+            end: "top 37%",
+            scrub: 2,
+        },
+      
+    });
 }
 
 page2Animation()
+
