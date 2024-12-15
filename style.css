@@ -113,6 +113,7 @@ nav h4{
     width: 100%;
     position: relative;
     padding: 5vw 2.8vw;
+    margin-bottom: 25vh;
     
 }
 #page2-top{
@@ -154,7 +155,9 @@ nav h4{
 }
 #page3-top{
     text-align: center;
+    margin-bottom: 30vh
 }
+
 #page3-top h4{
     margin-bottom: 1vw;
     font-size: 1vw;
@@ -173,13 +176,26 @@ nav h4{
     font-size: 4vw;
     font-weight: 500;
 }
+#page3 .letter {
+    display: flex;
+    padding: 1.7vw 0;
+    justify-content: space-between;
+}
+#page3 .letter span{
+    font-size: 1.7vw;
+    font-weight: 500;
+    
+}
+#page3 .letter h4{
+    font-size: 2vw;
+    font-weight: 500;
+}
 #page3-elements{
     height: 80vh;
     width:100%;
-    
     display: flex;
     align-items: center;
-    margin-top: 8vw ;
+   
     justify-content: space-between;
 
 }
