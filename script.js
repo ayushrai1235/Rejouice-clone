@@ -35,9 +35,14 @@ locomotive()
 
 function cursoreffect() {
     var page1Content = document.getElementById("page1-content")
-var cursor = document.getElementsByClassName("cursor")[0]
+    var cursor = document.getElementsByClassName("cursor")[0]
+    
+
+    console.log(page5)
 
 page1Content.addEventListener("mousemove",function(e){
+    console.log(e);
+    
     gsap.to(cursor,{
         x:e.x,
         y:e.y
@@ -55,10 +60,40 @@ page1Content.addEventListener("mouseleave",function(){
         scale:0
     })
 })
+
+
 }
 
 cursoreffect()
 
+function page5cursor() {
+    var cursor2 = document.querySelectorAll("#page5 .cursor2")[0]
+    var page5 = document.querySelector("#page5 ")
+    page5.addEventListener("mousemove",function(e){
+        
+        gsap.to(cursor2, {
+            x: e.x,
+            y: e.y,
+        
+        });
+    })
+    
+    
+    page5.addEventListener("mouseenter",function(){
+        gsap.to(cursor2,{
+            scale:1
+        })
+    })
+    page5.addEventListener("mouseleave",function(){
+        gsap.to(cursor2,{
+            scale:0
+        })
+    })
+    
+   
+}
+
+page5cursor()
 function page2Animation(){
     gsap.from("#page2 .elem h1 " , {
         y:120,
