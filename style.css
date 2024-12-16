@@ -287,21 +287,3 @@ nav h4{
     font-weight: 500;
 }
 
-.cursor2{
-    height: 7.5vw;
-    width: 7.5vw;
-    background-color: rgba(0, 0, 0, 0.742);
-    border-radius: 50%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   transform: translate(-767px,-277px);
-    z-index: 2000;
-    /* transform: translate(-50%,-50%); */
-    transition: all linear 0.1s;
-}
-.cursor2 h5{
-    font-size: 1.2vw;
-    color: white;
-}

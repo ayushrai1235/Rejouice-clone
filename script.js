@@ -38,8 +38,6 @@ function cursoreffect() {
     var cursor = document.getElementsByClassName("cursor")[0]
     
 
-    console.log(page5)
-
 page1Content.addEventListener("mousemove",function(e){
     console.log(e);
     
@@ -66,34 +64,7 @@ page1Content.addEventListener("mouseleave",function(){
 
 cursoreffect()
 
-function page5cursor() {
-    var cursor2 = document.querySelectorAll("#page5 .cursor2")[0]
-    var page5 = document.querySelector("#page5 ")
-    page5.addEventListener("mousemove",function(e){
-        
-        gsap.to(cursor2, {
-            x: e.x,
-            y: e.y,
-        
-        });
-    })
-    
-    
-    page5.addEventListener("mouseenter",function(){
-        gsap.to(cursor2,{
-            scale:1
-        })
-    })
-    page5.addEventListener("mouseleave",function(){
-        gsap.to(cursor2,{
-            scale:0
-        })
-    })
-    
-   
-}
 
-page5cursor()
 function page2Animation(){
     gsap.from("#page2 .elem h1 " , {
         y:120,
