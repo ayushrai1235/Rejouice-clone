@@ -65,6 +65,8 @@ page1Content.addEventListener("mouseleave",function(){
 cursoreffect()
 
 
+
+
 function page2Animation(){
     gsap.from("#page2 .elem h1 " , {
         y:120,
@@ -111,3 +113,17 @@ function page2Animation(){
 
 page2Animation()
 
+function swiper() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+          },
+      });
+    
+}
+
+swiper()
