@@ -123,6 +123,8 @@ function pageAnimation(){
         },
       
     });
+
+
 }
 
 pageAnimation()
@@ -176,7 +178,31 @@ function headingAnimation() {
         opacity: 0,
         y: 70,
         stagger: 0.2, // Delay between each letter's animation
-        scrub: 2
+        ease: "power3.out" 
       });
 }
 
+function animateFooterLetters() {
+    gsap.from("#footer-heading h1 span", {
+      duration: 1,
+      opacity: 0,
+      y: 70, 
+      stagger: 0.2, 
+      ease: "power3.out" 
+    });
+  }
+
+
+  const footerSection = document.querySelector("#footer");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateFooterLetters();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.5 }); 
+
+ 
+  observer.observe(footerSection);
