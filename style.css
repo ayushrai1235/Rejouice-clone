@@ -154,7 +154,8 @@ nav h4{
 }
 #page3-top{
     text-align: center;
-    margin-bottom: 30vh
+    margin-bottom: 30vh;
+    overflow: hidden;
 }
 
 #page3-top h4{
@@ -393,7 +394,7 @@ nav h4{
 }
 
 #footer{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background: #000;
     color: #fff;
@@ -483,5 +484,5 @@ nav h4{
 #footer-heading span{
     display: inline-block; 
     font-family: rejoy;
-    transform: translateY(-100px)
+    transform: translateY(-50px)
 }

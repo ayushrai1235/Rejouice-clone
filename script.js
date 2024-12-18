@@ -90,7 +90,7 @@ function pageAnimation(){
             trigger: "#page4",
             scroller: "#main",
             start: "top 40%",
-            end: "top 37%",
+            end: "top 30%",
             scrub: 2,
         },
       
@@ -104,7 +104,7 @@ function pageAnimation(){
             trigger: "#page6",
             scroller: "#main",
             start: "top 40%",
-            end: "top 37%",
+            end: "top 30%",
             scrub: 2,
         },
       
@@ -123,6 +123,7 @@ function pageAnimation(){
         },
       
     });
+
 
 
 }
