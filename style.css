@@ -370,3 +370,118 @@ nav h4{
     color: #fff;
     font-weight: 500;
 }
+
+#page8{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page8 h3{
+    font-weight: 500;
+    
+}
+
+#page8 h1{
+    font-size: 5vw;
+    font-weight: 500;
+    text-decoration: underline 2px;
+}
+
+#footer{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 2vw 3vw;
+}
+
+#footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+#footer-top #left h4{
+    font-size: 1.8vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+
+#footer-top #left button{
+    padding: 1vw 1.5vw;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#footer-top #right{
+    display: flex;
+    
+    justify-content: space-between;
+    width: 20vw;
+}
+
+#footer-top #right .left{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+#footer-top #right a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-top #right .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+#footer-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13vw;
+}
+
+#footer-mid #midl h3{
+    font-weight: 500;
+}
+
+#footer-mid #midr {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    font-size: 1vw;
+}
+
+#footer-heading {
+    margin-top: 3vw;
+}
+
+
+#footer-heading h1{
+    display: flex; /* Ensures spans align horizontally */
+    justify-content: center; /* Center aligns horizontally */
+    align-items: center;
+    font-family: rejoy;
+    font-size: 24vw;
+    margin: 0;
+}
+
+#footer-heading span{
+    display: inline-block; 
+    font-family: rejoy;
+    transform: translateY(-100px)
+}

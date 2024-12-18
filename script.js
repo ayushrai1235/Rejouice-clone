@@ -67,7 +67,7 @@ cursoreffect()
 
 
 
-function page2Animation(){
+function pageAnimation(){
     gsap.from("#page2 .elem h1 " , {
         y:120,
         stagger: 0.2,
@@ -109,9 +109,23 @@ function page2Animation(){
         },
       
     });
+
+    gsap.from("#page8 h1 ", {
+        y: 120,
+        stagger: 0.3,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#page8",
+            scroller: "#main",
+            start: "top 40%",
+            end: "top 37%",
+            scrub: 2,
+        },
+      
+    });
 }
 
-page2Animation()
+pageAnimation()
 
 function swiper() {
     var swiper = new Swiper(".mySwiper", {
@@ -148,8 +162,21 @@ function loader() {
     })
 
     tl.to("#loader",{
-        display:"none"
+        display:"none",
+        onComplete: headingAnimation
+    
     })
 }
 
 loader()
+
+function headingAnimation() {
+    gsap.from("#page1 h1 span", {
+        duration: 1,
+        opacity: 0,
+        y: 70,
+        stagger: 0.2, // Delay between each letter's animation
+        scrub: 2
+      });
+}
+
